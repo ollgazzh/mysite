@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ольга | Мой сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main-screen">
+        <div class="title-container">
+            <h1>Всем привет, меня зовут</h1>
+            <div class="letters-container">
+                <button class="letter" onclick="showSpecial('O')">О</button>
+                <button class="letter" onclick="showSpecial('l')">л</button>
+                <button class="letter" onclick="showSpecial('soft')">ь</button>
+                <button class="letter" onclick="showSpecial('g')">г</button>
+                <button class="letter" onclick="showSpecial('a')">а</button>!
+            </div>
+        </div>
+
+        <div class="menu">
+            <button class="headers" onclick="showSpecial('text2')">Мои увлечения</button>
+            <button class="headers highlight" onclick="showSpecial('text1')">Обо мне</button>
+            <button class="headers" onclick="showSpecial('text3')">Мои желания</button>
+        </div>
+    </div>
+
+    <div id="animation-zone"></div>
+
+    <!-- Блок Обо мне -->
+    <div id="text1" class="texts">
+        <h2>Обо мне</h2>
+        <p>Как меня зовут: Ольга<br>
+            Дата рождения: 07.04.2008<br>
+            Где я живу: Россия, г. Владивосток<br>
+            Где я учусь: ДВФУ, системное программирование</p>
+        <button class="back-btn" onclick="goBack()">← Назад</button>
+    </div>
+
+    <!-- Блок Увлечения -->
+    <div id="text2" class="texts">
+        <h2>Мои увлечения</h2>
+        <p><b>Музыка:</b> рок, рэп, хип-хоп, R&B, джаз, блюз, электронная музыка<br><br>
+            <b>Спорт:</b> волейбол, баскетбол, футбол, настольный теннис, боевые искусства, стрельба, бадминтон<br><br>
+            <b>Приготовление десертов и выпечки</b><br><br>
+            <b>Друзья</b>
+        </p>
+        <button class="back-btn" onclick="goBack()">← Назад</button>
+    </div>
+
+    <!-- Блок Желания (Галерея) -->
+    <div id="text3" class="texts">
+        <h2>Мои желания (Путешествия)</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="images/kaliningrad.jpg" alt="Калининград">
+                <p>Калининград — европейская архитектура и море.</p>
+            </div>
+            <div class="card">
+                <img src="images/spb.jpg" alt="СПБ">
+                <p>Санкт-Петербург — белые ночи, разводные мосты и атмосфера.</p>
+            </div>
+            <div class="card">
+                <img src="images/japan.jpg" alt="Япония">
+                <p>Япония — Фудзи и сакура.</p>
+            </div>
+            <div class="card">
+                <img src="images/finland.jpg" alt="Финляндия">
+                <p>Финляндия — северная природа .</p>
+            </div>
+            <div class="card">
+                <img src="images/switzerland.jpg" alt="Швейцария">
+                <p>Швейцария — альпийские луга, горы и шоколад.</p>
+            </div>
+            <div class="card">
+                <img src="images/norway.jpg" alt="Норвегия">
+                <p>Норвегия — величественные фьорды и северное сияние.</p>
+            </div>
+        </div>
+        <button class="back-btn" onclick="goBack()">← Назад</button>
+    </div>
+
+    <!-- Блок Связаться -->
+    <div id="text4" class="texts">
+        <h2>Связаться со мной</h2>
+        <p>телеграм: @qqqqsds<br>
+            github: <a href="https://github.com/ollgazzh" target="_blank">github.com/ollgazzh</a><br>
+            email: <a href="mailto:olgazukova076@gmail.com">olgazukova076@gmail.com</a></p>
+        <button class="back-btn" onclick="goBack()">← Назад</button>
+    </div>
+
+    <button id="about-btn" onclick="showSpecial('text4')">Как связаться</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
